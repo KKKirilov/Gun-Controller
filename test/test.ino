@@ -28,7 +28,7 @@ void setup() {
 void loop() {
   onState = digitalRead(onPin);
 if (onState == HIGH){
-  //----------------------------------------------------------------
+  //-------------------LAZER---------------------------------
   buttonState = digitalRead(buttonPin);
 
   if (buttonState == HIGH) { 
@@ -39,7 +39,7 @@ if (onState == HIGH){
     digitalWrite(ledPin, LOW);
     Serial.println("LED OFF -------");
   }
-  //-----------------------------------------------------------------
+  //-------------------------------------------------------------------
   if (digitalRead(upButton) == HIGH) {
     Keyboard.write('u');
   }
@@ -53,6 +53,9 @@ if (onState == HIGH){
     Keyboard.write('r');
   }
   //-------------------------------------------------------------------
+  
+
+  //-----------------------------------------------------------------------
 }
 
 }
